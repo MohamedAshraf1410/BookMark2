@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./bm.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9fe43e3d61.js" crossorigin="anonymous"></script>
+<!-- SweetAlert2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.4/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.4/dist/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+    <div class="parent py-5">
+        <div class="container py-5  d-flex justify-content-center align-items-center flex-column"><h2 class="position-relative"> Bookmarker </h2>
+            <hr class="w-100">
+            <h4 > <i class="fa-solid fa-bookmark "></i> Bookmark your favorite sites  <i class="fa-solid fa-bookmark"></i></h4>
+        <div class="sitename p-3  w-100"><label for="bookmarkName" class="fw-bold">
+            <i class="fa-solid fa-book-bookmark p-2"></i>
+            Site Name</label>
+        <input name="input1"  id="bookmarkName" class="form-control form-border" type="text" placeholder="BookMark Name"pattern="^.{3,}$" title="At least 3 characters required" required>
+        <h6 id="rule1" class="text-danger float-end ">Name must contain at least 3 chars</h6>
+        </div>
+        <div class="siteurl p-3 w-100"><label for="Url" class="fw-bold">
+            <i class="fa-solid fa-link p-2"></i>Site URL</label>
+        <input name="input2"  id="Url" class="form-control form-border" type="url" placeholder="Website URL">
+        <h6 id="rule2" class="text-danger float-end ">Url should be valid one EX/ https.abcd</h6>
+        </div>
+
+        <Button id="subbutton" onclick="getvalues()" class="btn btn-danger px-5 ">Submit</Button>
+        <button id="upbutton" onclick="update() , base()" class="btn btn-success px-5">update vlaue</button>
+        <hr class="w-100">
+        <table  class="table text-center bg-white w-100">
+            <thead><th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            <th>update</th>
+            </thead>
+            <tbody id="demo"></tbody>
+            
+            </table>
+            </div>
+
+        
+    
+    
+    </div>
+
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>

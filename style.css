@@ -1,0 +1,40 @@
+:root{--main-font:"PT Sans Caption", sans-serif;
+    --header-font:"Pacifico", cursive;
+    --sec-font:"Righteous", sans-serif;
+}
+.parent{background-color: #F7ECDE;
+    min-height: 100vh;
+}
+.parent h2{font-family: var(--header-font);
+font-size: 50px;
+z-index: 1 !important;
+}
+.parent h4{font-family:var(--sec-font);
+    color: #40A55B;
+
+}
+.parent h2::before{background-color: #FEC260;
+content: "";
+    height: 20px;
+    width: 100%;
+position: absolute;
+bottom: 0;
+
+z-index: -1 !important;
+transition: .4s;
+}
+.parent h2:hover::before{height: 35px;}
+.btn1{background-color: rgb(158, 178, 59) !important;
+color: white !important;
+transition: .2s;
+}
+.btn1:hover{background-color: #8A9E23 !important;}
+
+.form-border:focus{border-color: #d99c39 !important;
+    box-shadow:0 0 0 0.25rem #fec26055 !important;}
+.is-invalid:focus{border-color:red !important ;
+box-shadow: red !important;
+}
+#rule1{display: none;}
+#rule2{display: none;}
+#upbutton{display: none;}
